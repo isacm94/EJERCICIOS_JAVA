@@ -1,5 +1,5 @@
 /*EJERCICIO 6*/
-/*
+ /*
  * To change this license header, choose License Headers in Project Properties.
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
@@ -36,12 +36,27 @@ public class Form1 extends HttpServlet {
             out.println("<!DOCTYPE html>");
             out.println("<html>");
             out.println("<head>");
-            out.println("<title>Servlet Form1</title>");            
+            out.println("<title>Servlet Form1</title>");
             out.println("</head>");
             out.println("<body>");
             out.println("<h1>EJERCICIO 6</h1>");
+
+            //Recogemos datos enviado por post
+            String nombre = request.getParameter("nombre");
+            String apellidos = request.getParameter("apellidos");
+            String edad = request.getParameter("edad");
+            String sexo = request.getParameter("sexo");
+
+            //Mostramos datos
+            out.println("<h2>Datos enviados en el formulario:</h2>");
+            out.println("<h3>Nombre: " + nombre + "</h3>");
+            out.println("<h3>Apellidos: " + apellidos + "</h3>");
+            out.println("<h3>Edad: " + edad + "</h3>");
+            out.println("<h3>Sexo: " + sexo + "</h3>");
+
             out.println("</body>");
             out.println("</html>");
+
         }
     }
 

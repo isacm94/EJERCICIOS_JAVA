@@ -9,7 +9,7 @@
         <servlet-class>ejercicio1.numeros</servlet-class>
     </servlet>
     <servlet>
-        <servlet-name>numtabla</servlet-name>
+        <servlet-name>numtabla</servlet-name><!-- no se usa-->
         <servlet-class>ejercicio1.numtabla</servlet-class>
     </servlet>
     <servlet>
@@ -20,6 +20,7 @@
         <servlet-name>Form1</servlet-name>
         <servlet-class>ejercicio1.Form1</servlet-class>
     </servlet>
+    
     <servlet-mapping>
         <servlet-name>HolaMundoSaludo</servlet-name>
         <url-pattern>*.saludo</url-pattern>
@@ -29,7 +30,7 @@
         <url-pattern>/numeros</url-pattern>
     </servlet-mapping>
     <servlet-mapping>
-        <servlet-name>numtabla</servlet-name>
+        <servlet-name>numtabla</servlet-name><!-- no se usa-->
         <url-pattern>/numtabla</url-pattern>
     </servlet-mapping>
     <servlet-mapping>
